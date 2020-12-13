@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+section .title {
+    text-align: center;
+}
+
+section main {
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0
+}
+
+section main span {
+font-size: 70px;
+}
+
+section main a {
+    display: block;
+    font-size: 24px;
+    color: #3f3f3f
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/section-box.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+    <title>Feedback | International Airlines</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/">International Airlines</a></div>
+        <div class="navbar">
+            <div class="profile">
+                <div class="img">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-375-456327.png" alt="Avatar">
+                </div>
+                <div class="info">
+                    <div class="name">Максим Зінько</div>
+                    <div class="money">Баланс: <span>25.30</span> UAH</div>
+                </div>
+
+                <ul class="menu">
+                    <li class="menuItem"><a href="/profile">Профіль</a></li>
+                    <li class="menuItem"><a href="/discounts">Мої акції</a></li>
+                    <li class="menuItem"><a href="/balance">Баланс</a></li>
+                    <li class="menuItem"><a href="/settings">Налаштування</a></li>
+                    <li class="menuItem"><a href="/feedback">Зворотній зв'язок</a></li>
+                </ul>
+            </div>  
+        </div>
+    </header>
+    <section class="feedback-page">
+        <div class="title">
+            Зворотній зв'язок
+        </div>
+        <main>
+           <form>
+               <div class="form-item">
+                   <label for="from">Від</label>
+                   <input type="email" disabled value="some@example.com">
+               </div>
+               <div class="form-item">
+                    <label for="to">Кому</label>
+                    <select name="to" id="secect_to">
+                        <option value="0">- Нічого не вибрано -</option>
+                        <option value="1">Дирекція компанії</option>
+                        <option value="2">Менеджери компанії</option>
+                        <option value="3">Відділ кадрів</option>
+                        <option value="4">Відділ по роботі з рейсами</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="subject">Тема</label>
+                    <input type="text" name="subject" id="subject">
+                </div>
+                <div class="form-item">
+                    <label for="mess">Повідомлення</label>
+                    <textarea name="mess" id="mess"></textarea>
+                </div>
+                <div class="form-button">
+                    <button>Відправити</button>
+                </div>
+           </form>
+        </main>
+    </section>
+</body>
+</html>

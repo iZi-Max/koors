@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/section-box.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Profile settings: International Airlines</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/">International Airlines</a></div>
+        <div class="navbar">
+            <div class="profile">
+                <div class="img">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-375-456327.png" alt="Avatar">
+                </div>
+                <div class="info">
+                    <div class="name">Максим Зінько</div>
+                    <div class="money">Баланс: <span>25.30</span> UAH</div>
+                </div>
+
+                <ul class="menu">
+                    <li class="menuItem"><a href="/profile">Профіль</a></li>
+                    <li class="menuItem"><a href="/discounts">Мої акції</a></li>
+                    <li class="menuItem"><a href="/balance">Баланс</a></li>
+                    <li class="menuItem"><a href="/settings">Налаштування</a></li>
+                    <li class="menuItem"><a href="/feedback">Зворотній зв'язок</a></li>
+                </ul>
+            </div>  
+        </div>
+    </header>
+    <section class="settings-page">
+        <div class="title">
+            Налаштування профілю
+        </div>
+        <main>
+            <div class="setting-box section-box">
+                <div class="text">
+                    Контактна інформація
+                </div>
+                <div class="box-body box">
+                    <div class="title">
+                        <label for="lastname">Прізвище:</label>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="lastname" id="lastname" name="lastname" value="Зінько">
+                    </div>
+
+                    <div class="title">
+                        <label for="firstname">Ім'я:</label>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="firstname" id="firstname" name="firstname" value="Максим">
+                    </div>
+
+                    <div class="title">
+                        <label for="middlename">По батькові:</label>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="middlename" id="middlename" name="middlename" value="Романович">
+                    </div>
+
+                    <div class="title">
+                        <label for="sex">Стать:</label>
+                    </div>
+                    <div class="form">
+                        <div class="check-item">
+                            <input type="radio" class="sex" id="sex_male" name="sex" value="ч" checked>
+                            <label for="sex_male">Чоловіча</label>
+                        </div>
+                        <div class="check-item">
+                            <input type="radio" class="sex" id="sex_female" name="sex" value="ж">
+                            <label for="sex_female">Жіноча</label>
+                        </div>
+                    </div>
+
+                    <div class="title">
+                        <label for="dateOfBirth-input">Дата народження:</label>
+                    </div>
+                    <div class="form">
+                        <input type="date" class="dateOfBirth-input" id="dateOfBirth-input" name="dateOfBirth-input" value="2000-10-02">
+                    </div>
+
+                    <div class="title">
+                        <label for="email-input">Email:</label>
+                    </div>
+                    <div class="form">
+                        <input type="email" class="email-input" id="email-input" name="email-input" value="some@example.com">
+                        <button><i class="fas fa-plus"></i> email</button>
+                    </div>
+
+                    <div class="title">
+                        <label for="phone-number">Номер телефону:</label>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="phone-number" id="phone-number" name="phone-number" value="+380(50)521-39-29">
+                        <button><i class="fas fa-plus"></i> номер телефону</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-box section-box">
+                <div class="text">
+                    Банківські реквізити
+                </div>
+                <div class="box-body box">
+                    <div class="title">
+                        <label for="check-card">Виберіть карту:</label>
+                    </div>
+                    <div class="form">
+                        <select name="cards" id="check-card">
+                            <option value="1">Основна карта</option>
+                        </select>
+                        <button><i class="fas fa-plus"></i> карту</button>
+                    </div>
+
+
+                    <div class="title">
+                        <label for="card-number">Номер карти:</label>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="card-number" id="card-number" name="card-number" value="5534 2231 2366 3409">
+                    </div>
+
+                    <div class="title">
+                        <label for="expriresIn">Дата дії:</label>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="expriresIn" id="expriresIn" name="expriresIn" value="08 / 19">
+                    </div>
+
+                    <div class="title">
+                        <label for="cvv">CVV: </label>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="cvv" id="cvv" name="cvv" value="355">
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-box section-box">
+                <button>Зберегти зміни</button>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

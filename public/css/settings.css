@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+section.settings-page main .setting-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.settings-page main .setting-box .text {
+    font-size: 20px;
+    padding: 10px 0;
+    width: 100%;
+    animation: slideUp 0.8s ease
+}
+
+section.settings-page main .setting-box .box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 50%;
+}
+
+section.settings-page main .setting-box .box .title {
+    text-align: right;
+    margin-right: 4px;
+    margin-top: 9px;
+    animation: slideRight 1s ease
+}
+
+section.settings-page main .setting-box .box .form {
+    display: flex;
+    flex-direction: column;
+    animation: slideLeft 1s ease
+}
+
+section.settings-page main .setting-box .box .form input,
+section.settings-page main .setting-box .box .form select {
+    padding: 10px;
+    outline: none;
+}
+
+section.settings-page main .setting-box .box .form button {
+    margin-top: 6px;
+    background: #f5f5f5; 
+    border: 2px dashed rgba(51, 48, 48, 1);
+    padding: 6px 10px;
+    text-align-last: left;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+section.settings-page main .setting-box .box .title,
+section.settings-page main .setting-box .box .form {
+    padding: 10px 0;
+}
+
+
+
+.setting-box > button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: rgba(51, 48, 48, 1);
+    border: none;
+    color: #f5f5f5;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .6s ease;
+    animation: slideUp 1s ease
+}
+
+.setting-box > button:not(:disabled):hover {
+    background: #f5f5f5;
+    border: 2px solid rgba(51, 48, 48, 1);
+    color: rgba(51, 48, 48, 1);
+}
+
+@media only screen and (max-width: 750px) {
+    section.settings-page main .setting-box .box {
+        width: 70%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section.settings-page main .setting-box .box {
+        width: 100%
+    }
+}

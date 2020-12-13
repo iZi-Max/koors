@@ -1,0 +1,21 @@
+main section {
+    display: grid;
+    grid-gap: 10px
+}
+
+main section .stat-box {
+    text-align: left;
+}
+
+main section .stat-box form {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main section .stat-box form .form-button {
+    grid-column: 2 
+}
+
+.date-out-form-item {
+    grid-row: 3;
+    grid-column: 1
+}

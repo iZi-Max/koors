@@ -1,0 +1,15 @@
+section {
+    min-width: 350px;
+}
+
+@media only screen and (max-width: 450px) {
+    section {
+        min-width: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    section {
+        min-width: 200px;
+    }
+  }

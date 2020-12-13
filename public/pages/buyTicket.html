@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/section-box.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/buyTicket.css">
+    <title>Profile: Максим Зінько | International Airlines</title>
+</head>
+<body>
+    <header>    
+        <div class="logo"><a href="/">International Airlines</a></div>
+        <div class="navbar">
+            <div class="profile">
+                <div class="img">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-375-456327.png" alt="Avatar">
+                </div>
+                <div class="info">
+                    <div class="name">Максим Зінько</div>
+                    <div class="money">Баланс: <span>25.30</span> UAH</div>
+                </div>
+
+                <ul class="menu">
+                    <li class="menuItem"><a href="/profile">Профіль</a></li>
+                    <li class="menuItem"><a href="/discounts">Мої акції</a></li>
+                    <li class="menuItem"><a href="/balance">Баланс</a></li>
+                    <li class="menuItem"><a href="/settings">Налаштування</a></li>
+                    <li class="menuItem"><a href="/feedback">Зворотній зв'язок</a></li>
+                </ul>
+            </div>  
+        </div>
+    </header>
+    <section class="buy-ticket-page">
+        <div class="title">
+            Купити квиток
+        </div>
+        <main>
+            <div class="section-box">
+                <div class="text">
+                    Рейс
+                </div>
+                <div class="box-body">
+                    <p>Місто вильоту: <span>Львів</span></p>
+                    <p>Дата і час вильоту: <span>21.12.2018 - 09:40</span></p>
+                    <p>Місто прильоту: <span>Івано-Франківськ</span></p>
+                    <p>Дата і час прильоту: <span>21.12.2018 - 09:40</span></p>
+                </div>
+            </div>
+            <div class="section-box">
+                <div class="text">
+                    Пасажири
+                </div>
+                <div class="box-body">
+                    <div class="add-passenger-form">
+                        <form>
+                            <div class="form-item">
+                                <select name="type" id="typeOfPerson">
+                                    <option value="0">Нічого не вибрано</option>
+                                    <option value="1">Дитина</option>
+                                    <option value="2">Дорослий</option>
+                                    <option value="3">Пенсіонер</option>
+                                </select>
+                                <button class="dashed"><i class="fas fa-plus"></i> пасажира</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="passengers">
+                        <div class="passenger">
+                            <div class="title">Пасажир №1</div>
+                            <div class="info">
+                                <p>Прізвище: <span>Зінько</span></p>
+                                <p>Ім'я: <span>Максим</span></p>
+                                <p>По батькові: <span>Романович</span></p>
+                                <p>Email: <span>some@example.com</span></p>
+                                <p>Номер телефону: <span>+380(99)123-45-67</span></p>
+                                <p>Місце: <span>45</span><button class="dashed change-place">Змінити (+ 50 UAH)</button></p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="section-box">
+                <div class="text">
+                    Багаж
+                </div>
+                <div class="box-body">
+                    <div class="add-passenger-form">
+                        <form>
+                            <div class="form-item">
+                                <select name="type" id="typeOfBaggage">
+                                    <option value="0">Нічого не вибрано</option>
+                                    <option value="1">Валіза</option>
+                                    <option value="2">Ручна покладь</option>
+                                    <option value="3">Рюкзак</option>
+                                </select>
+                                <button class="dashed"><i class="fas fa-plus"></i> багаж</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="baggages">
+                        <div class="baggage">
+                            <div class="title">Багаж №1 (+140 UAH) <button class="dashed change-place">Видалити</button></div>
+                            <div class="info">
+                                <p>Назва: <span>Валіза</span></p>
+                                <p>Вага: <span>20 кг</span></p>
+                                <p>Довжина: <span>25 см</span></p>
+                                <p>Висота: <span>105 см</span></p>
+                                <p>Ширина: <span>40 см</span></p>
+                                <p></p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="section-box">
+                <div class="text">
+                    Загалом
+                </div>
+                <div class="box-body">
+                    <p class="price">550 UAH</p>
+                    <div class="buy">
+                        <button class="buy-button">Придбати</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

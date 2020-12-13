@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+
+section.profile-page main {
+    padding: 15px 0;
+}
+
+section.profile-page main .profile-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: slideUp 1s ease
+}
+
+section.profile-page main .profile-info .avatar img {
+    width: 150px;
+}
+
+section.profile-page main .profile-info .desc {
+    padding: 10px 0;
+}
+
+section.profile-page main .profile-info .desc h3 {
+    font-size: 28px
+}
+
+section.profile-page main .profile-info .desc p {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+section.profile-page main section .statistic {
+    animation: slideRight 1s ease
+}
+
+section.profile-page main section .sold-tickets {
+    animation: slideLeft 1s ease
+}
+
+section.profile-page main section .statistic h4,
+section.profile-page main section .sold-tickets h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section.profile-page main section .sold-tickets h4 {
+    text-align: center;
+}
+
+section.profile-page main section .statistic p {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+section.profile-page main section .statistic p span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+section.profile-page main section .sold-tickets table {
+    width: 100%;
+}
+
+section.profile-page main section .sold-tickets table,
+section.profile-page main section .sold-tickets tr th,
+section.profile-page main section .sold-tickets tr td {
+    border: 1px solid rgba(51, 48, 48, 1);
+    border-spacing: 0;
+    text-align: center;
+}
+
+section.profile-page main section .sold-tickets tr th {
+    font-size: 18px;
+    padding: 10px;
+    background: rgba(51, 48, 48, 1);
+    color: #e3dede;
+    border-color: #e3dede;
+}
+
+section.profile-page main section .sold-tickets tr td {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.box-body {
+    padding: 5px 15px;
+}
+
+section.profile-page main section .sold-tickets tr td a.action {
+    color: black;
+    font-weight: bold;
+
+}

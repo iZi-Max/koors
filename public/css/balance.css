@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+.balance-page main .section-box {
+    padding: 10px 0;
+}
+
+.balance-page main .section-box .box-body {
+    padding: 0 10px
+}
+
+.balance-page main .section-box .box-body p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.balance-page main .section-box .box-body p.status-info:first-child span {
+    color: green;
+}
+
+.balance-page main .section-box .box-body p span {
+    font-weight: bold;
+}
+
+.balance-page main .section-box .box-body > button {
+    padding: 10px 15px;
+    background: rgba(51, 48, 48, 1);
+    color: #e3e3e3;
+    font-weight: bold;
+    border: none;
+    transition: 0.8s ease;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.balance-page main .section-box .box-body > button:hover {
+    color: rgba(51, 48, 48, 1);
+    background: #e3e3e3;
+    cursor: pointer;
+}
+
+.balance-page main .section-box .box-body p.transact-info span.put {
+    color: green;
+}
+
+.balance-page main .section-box .box-body p.transact-info span.take {
+    color: red
+}
+
+.balance-page main .section-box .box-body p.transact-info {
+    display: block;
+    padding: 5px 10px;
+    background: rgb(231, 231, 231);
+    border-radius: 3px;
+    border: 1px solid rgb(155, 155, 155)
+
+}
+
+.last-transactions {
+    max-height: 200px;
+    overflow-y: auto;
+}

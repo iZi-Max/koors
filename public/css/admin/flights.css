@@ -1,0 +1,15 @@
+main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px
+}
+
+.full {
+    grid-column: 1/4 !important
+}
+
+main section .stat-box.flight-info .body {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}

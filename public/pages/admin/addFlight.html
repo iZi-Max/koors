@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/admin/index.css">
+    <link rel="stylesheet" href="../../css/admin/addFlight.css">
+    <title>Add Flight | Admin Panel | International Airlines</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">INTERNATIONAL AIRLINES</a>
+            <p>Адмін-панель</p>
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/admin"><span class="icon"><i class="fas fa-home"></i></span>Головна</a></li>
+                <li class="active"><a href="/admin/accounts"><span class="icon"><i class="fas fa-users"></i></span>Профілі</a></li>
+                <ul>
+                    <li><a href="/admin/accounts/passengers"><span class="icon"><i class="fas fa-user"></i></span>Користувачі</a></li>
+                    <li><a href="/admin/accounts/workers"><span class="icon"><i class="fas fa-briefcase"></i></span>Працівники</a></li>
+                </ul>
+                <li><a href="/admin/flights"><span class="icon"><i class="fas fa-plane-departure"></i></span>Рейси</a></li>
+                <ul>
+                    <li><a href="/admin/flights/search"><span class="icon"><i class="fas fa-search"></i></span>Пошук</a></li>
+                    <li><a href="/admin/flights/archive"><span class="icon"><i class="fas fa-file-archive"></i></span>Архів</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="admin">
+            <div class="avatar"><img src="https://www.w3schools.com/w3images/avatar6.png" alt="avatar"></div>
+            <div class="info">
+                <div class="name">Іванна Іванченко</div>
+                <div class="position">Менеджер</div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="title">
+                Додати рейс
+            </div>
+
+            <div class="stat-box">
+                <form class="flight-info">
+                    <div class="form-item">
+                        <label for="serial-number">Серійний номер</label>
+                        <input type="text" name="serial-number" id="serial-number" value="KSW-000001" disabled>
+                    </div>
+                    <div class="form-item">
+                        <label for="cityOut">Місто вильоту</label>
+                        <input type="text" name="cityOut" id="cityOut">
+                    </div>
+                    <div class="form-item">
+                        <label for="dateOut">Дата та час вильоту</label>
+                        <input type="datetime-local" name="dateOut" id="dateOut">
+                    </div>
+                     <div class="form-item">
+                        <label for="cityIn">Місто прильоту</label>
+                        <input type="text" name="cityIn" id="cityIn">
+                    </div>
+                    <div class="form-item">
+                        <label for="dateIn">Дата та час прильоту</label>
+                        <input type="datetime-local" name="dateIn" id="dateIn">
+                    </div>
+                    <div class="form-item">
+                        <label for="price">Ціна</label>
+                        <input type="text" name="price" id="price">
+                    </div>
+                </form>
+            </div>
+
+            <div class="stat-box">
+                <label class="container">Транзит
+                    <input type="checkbox" checked="checked" name="hasTransit">
+                    <span class="checkmark"></span> 
+                </label>
+            </div>
+
+            <div class="stat-box">
+                <form class="flight-info">
+                    <div class="form-item">
+                        <label for="cityInTransit">Місто</label>
+                        <input type="text" name="cityInTransit" id="cityInTransit">
+                    </div>
+                    <div class="form-item">
+                        <label for="dateIn">Дата та час прильоту</label>
+                        <input type="datetime-local" name="dateIn" id="dateIn">
+                    </div>
+                    <div class="form-item">
+                        <label for="dateOut">Дата та час вильоту</label>
+                        <input type="datetime-local" name="dateOut" id="dateOut">
+                    </div>
+                </form>
+            </div>
+
+            <div class="stat-box">
+                <div class="header">Працівники на рейсі</div>
+                <div class="body">
+                    <form class="flight-info select-worker">
+                        <div class="form-item">
+                            <label for="workers">Працівник</label>
+                            <select name="workers" id="workers">
+                                <option value="0" selected>Нічого не вибрано</option>
+                                <option value="1">Пілот - Lorem ipsum dolor</option>
+                                <option value="2">Стюарт - Lorem, ipsum dolor.</option>
+                                <option value="3">Санітар - Lorem, ipsum dolor.</option>
+                            </select>
+                        </div>
+                        <div class="form-button">
+                            <button><i class="fa fa-plus"></i></button>
+                        </div>
+                        
+                    </form>
+
+                    <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>
+                                Прізвище                            
+                            </th>
+                            <th>
+                                Ім'я                            
+                            </th>
+                            <th>
+                                По батькові                            
+                            </th>
+                            <th>
+                                email                            
+                            </th>
+                            <th>
+                                Посада                            
+                            </th>
+                            <th>
+                                Дії                            
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Кириченко</td>
+                            <td>Михайло</td>
+                            <td>Іванович</td>
+                            <td>ljjsk@ukr.net</td>
+                            <td>Менеджер</td>
+                            <td>
+                                <button><i class="fas fa-user"></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                </div>
+            </div>
+
+            <div class="stat-box">
+                <form class="flight-info">
+                    <div class="form-button">
+                        <button>Додати</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

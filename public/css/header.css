@@ -1,0 +1,111 @@
+header {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    background-color: rgba(51, 48, 48, 1);
+    margin-bottom: 2px;
+    padding: 20px;
+    animation: fadeIn 0.6s ease;
+}
+
+header .logo, header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 20px;
+}
+
+header .logo a {
+    cursor: pointer;
+}
+
+header .navbar {
+    margin-left: auto;
+}
+
+header .navbar .menu {
+    display: flex;
+    list-style-type: none;
+}
+
+header .navbar .menu .menuItem {
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .navbar .menu .menuItem a, header .logo a {
+    text-decoration: none;
+    color: #e3dede;
+}
+
+header .navbar .menu .menuItem:hover {
+   background: #e3dede;
+   
+}
+
+header .navbar .menu .menuItem:hover a {
+    color: #333030
+}
+
+header .profile {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .profile .img img{
+    width: 40px;
+}
+
+header .profile .info {
+    margin-left: 10px;
+    color: #e3dede;
+    text-align: center;
+}
+
+header .profile .info .name {
+    font-size: 18px
+}
+
+header .profile .info span {
+    font-weight: bold;
+}
+
+header .profile > .menu {
+    display: none;
+}
+
+header .profile > .menu .menuItem {
+    border-top: 1px solid #e3dede;
+}
+
+header .profile:hover > .menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(51, 48, 48, 1);
+    width: 100%;
+    animation: slideDown 0.5s ease;
+    z-index: 5
+
+}
+
+@media only screen and (max-width: 520px) {
+    header .logo {
+        font-size: 18px;
+    }
+
+    header .profile .info .name {
+        font-size: 14px
+    }
+
+    header .profile .info .money {
+        font-size: 12px
+    }
+}

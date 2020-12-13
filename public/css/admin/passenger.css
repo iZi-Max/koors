@@ -1,0 +1,40 @@
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.person .avatar img {
+    width: 100px;
+    border-radius: 50%
+}
+
+main section .stat-box .body .stats .stats-item {
+    grid-template-columns: 1.4fr 1fr;
+}
+
+main section .stat-box .body .stats .stats-item .item-value {
+    padding: 0 5px;
+    font-weight: bold;
+    text-align-last: left;
+}
+
+.balance-active {
+    color: green
+}
+
+.balance-noactive {
+    color: rgb(230, 230, 80)
+}
+
+.balance-blocked {
+    color: red
+}

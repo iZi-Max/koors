@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+.feedback-page main {
+    padding: 15px 0 ;
+}
+
+.feedback-page main form {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    grid-gap: 15px;
+}
+
+.feedback-page main form .form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-page main form .form-item:nth-child(1) {
+    animation: slideRight 0.7s ease;
+}
+
+.feedback-page main form .form-item:nth-child(2) {
+    animation: slideLeft 0.7s ease;
+}
+
+.feedback-page main form .form-item:nth-child(3),
+.feedback-page main form .form-item:nth-child(4),
+.feedback-page main form .form-button {
+    grid-column: 1 / 3;
+    animation: slideUp  0.7s ease;
+}
+
+
+.feedback-page main form .form-item label {
+    color: #333030;
+    font-size: 16px;
+}
+
+.feedback-page main form .form-item input, 
+.feedback-page main form .form-item select,
+.feedback-page main form .form-item textarea {
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    height: 100%;
+}
+
+.feedback-page main form .form-item textarea {
+    min-height: 200px
+}
+
+.feedback-page main form .form-button {
+    text-align: center;
+}
+
+.feedback-page main form .form-button button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background: #e3dede;
+    color: #333030;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: .15s linear;
+}
+
+.feedback-page main form .form-button button:hover {
+    background: #333030;
+    color: #e3dede;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 680px) {
+    .feedback-page main form  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .feedback-page main form  {
+        display: block;
+    }
+
+    .feedback-page main form .form-item {
+        margin-bottom: 20px;
+    }
+}

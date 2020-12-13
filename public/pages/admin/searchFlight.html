@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/admin/index.css">
+    <link rel="stylesheet" href="../../css/admin/searchFlight.css">
+    <title>Passengers | Admin Panel | International Airlines</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">INTERNATIONAL AIRLINES</a>
+            <p>Адмін-панель</p>
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/admin"><span class="icon"><i class="fas fa-home"></i></span>Головна</a></li>
+                <li><a href="/admin/accounts"><span class="icon"><i class="fas fa-users"></i></span>Профілі</a></li>
+                <ul>
+                    <li><a href="/admin/accounts/passengers"><span class="icon"><i class="fas fa-user"></i></span>Користувачі</a></li>
+                    <li><a href="/admin/accounts/workers"><span class="icon"><i class="fas fa-briefcase"></i></span>Працівники</a></li>
+                </ul>
+                <li><a href="/admin/flights"><span class="icon"><i class="fas fa-plane-departure"></i></span>Рейси</a></li>
+                <ul>
+                    <li class="active"><a href="/admin/flights/search"><span class="icon"><i class="fas fa-search"></i></span>Пошук</a></li>
+                    <li><a href="/admin/flights/archive"><span class="icon"><i class="fas fa-file-archive"></i></span>Архів</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="admin">
+            <div class="avatar"><img src="https://www.w3schools.com/w3images/avatar6.png" alt="avatar"></div>
+            <div class="info">
+                <div class="name">Іванна Іванченко</div>
+                <div class="position">Менеджер</div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="title">
+                Пошук
+            </div>
+
+            <div class="stat-box">
+                <form>
+                    <div class="form-item">
+                        <label for="serial-number">Серійний номер</label>
+                        <input type="text" name="serial-number" id="serial-number">
+                    </div>
+                    <div class="form-item">
+                        <label for="dateOut">Дата відльоту</label>
+                        <input type="date" name="dateOut" id="dateOut">
+                    </div>
+                    <div class="form-item">
+                        <label for="cityOut">Місто вильоту</label>
+                        <input type="text" name="cityOut" id="cityOut">
+                    </div>
+                    <div class="form-item">
+                            <label for="cityIn">Місто прибуття</label>
+                            <input type="text" name="cityIn" id="cityIn">
+                        </div>
+                    <div class="form-button">
+                        <button>Знайти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="stat-box">
+                <div class="pagination">
+                    <button class="page-item"><i class="fas fa-arrow-left"></i></button>
+                    <button class="page-item page-active">1</button>
+                    <button class="page-item">2</button>
+                    <button class="page-item">3</button>
+                    <button class="page-item"><i class="fas fa-arrow-right"></i></button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>
+                                Серійний номер                           
+                            </th>
+                            <th>
+                                Місто вильоту                            
+                            </th>
+                            <th>
+                                Дата та час вильоту
+                            </th>
+                            <th>
+                                Місто прибуття                          
+                            </th>
+                            <th>
+                                Дата та час прибуття
+                            </th>
+                            <th>
+                                Дії
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>TDS-037431</td>
+                            <td>Львів</td>
+                            <td>21.12.2018 - 09:40</td>
+                            <td>Івано-Франківськ</td>
+                            <td>21.12.2018 - 10:40</td>
+                            <td>
+                                <button><i class="fas fa-plane"></i></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>TDS-037431</td>
+                            <td>Львів</td>
+                            <td>21.12.2018 - 09:40</td>
+                            <td>Івано-Франківськ</td>
+                            <td>21.12.2018 - 10:40</td>
+                            <td>
+                                <button><i class="fas fa-plane"></i></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>TDS-037431</td>
+                            <td>Львів</td>
+                            <td>21.12.2018 - 09:40</td>
+                            <td>Івано-Франківськ</td>
+                            <td>21.12.2018 - 10:40</td>
+                            <td>
+                                <button><i class="fas fa-plane"></i></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>TDS-037431</td>
+                            <td>Львів</td>
+                            <td>21.12.2018 - 09:40</td>
+                            <td>Івано-Франківськ</td>
+                            <td>21.12.2018 - 10:40</td>
+                            <td>
+                                <button><i class="fas fa-plane"></i></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>TDS-037431</td>
+                            <td>Львів</td>
+                            <td>21.12.2018 - 09:40</td>
+                            <td>Івано-Франківськ</td>
+                            <td>21.12.2018 - 10:40</td>
+                            <td>
+                                <button><i class="fas fa-plane"></i></i></button>
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                
+            </div>    
+        </section>
+    </main>
+</body>
+</html>

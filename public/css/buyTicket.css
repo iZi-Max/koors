@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+.buy-ticket-page main .section-box {
+    margin-top: 15px;
+    
+}
+
+.buy-ticket-page main .section-box .box-body {
+    padding: 10px 20px;
+    line-height: 2
+}
+
+.buy-ticket-page main .section-box .box-body span {
+    font-weight: bold;
+}
+
+.passenger .title, .baggage .title{
+    text-transform: uppercase;
+}
+
+.passenger .info, .baggage .info {
+    padding-left: 12px 
+}
+
+section main button.dashed {
+    margin-top: 6px;
+    background: #f5f5f5; 
+    border: 2px dashed rgba(51, 48, 48, 1);
+    padding: 6px 10px;
+    text-align-last: left;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none
+}
+
+.add-passenger-form {
+    padding: 20px 0
+}
+
+.add-passenger-form select {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.change-place {
+    margin-left: 10px;
+}
+
+.buy-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background: #e3dede;
+    color: #333030;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: .15s linear;
+}
+
+.buy-button:hover {
+    background: #333030;
+    color: #e3dede;
+    cursor: pointer;
+}
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.buy {
+    text-align: center;
+}

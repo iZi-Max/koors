@@ -1,0 +1,75 @@
+.ivano-frankivsk {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.35),
+        rgba(51, 48, 48, 0.35)
+    ),
+    url('../images/cities/if.jpg') center center ;
+}
+
+.lviv {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.35),
+        rgba(51, 48, 48, 0.35)
+    ),
+    url('../images/cities/lviv.jpg') center center ;
+    background-size: cover 
+}
+
+.kiev {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.35),
+        rgba(51, 48, 48, 0.35)
+    ),
+    url('../images/cities/kiev.jpg') center center ;
+    background-size: cover 
+}
+
+.vinnytsia {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.35),
+        rgba(51, 48, 48, 0.35)
+    ),
+    url('../images/cities/vinnytsia.jpg') center center ;
+    background-size: cover 
+}
+
+.ivano-frankivsk:hover {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.7),
+        rgba(51, 48, 48, 0.7)
+    ),
+    url('../images/cities/if.jpg') center center ;
+}
+
+.lviv:hover {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.7),
+        rgba(51, 48, 48, 0.7)
+    ),
+    url('../images/cities/lviv.jpg') center center ;
+}
+
+.kiev:hover {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.7),
+        rgba(51, 48, 48, 0.7)
+    ),
+    url('../images/cities/kiev.jpg') center center ;
+}
+
+.vinnytsia:hover {
+    background:
+    linear-gradient(
+        rgba(51, 48, 48, 0.7),
+        rgba(51, 48, 48, 0.7)
+    ),
+    url('../images/cities/vinnytsia.jpg') center center ;
+}
+
